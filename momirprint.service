@@ -1,0 +1,10 @@
+[Unit]
+Description=Momir Printer service
+After=multi-user.target
+
+[Service]
+ExecStart=/bin/bash <full path to momir_start.sh>
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
